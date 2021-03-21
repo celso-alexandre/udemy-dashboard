@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinancialMovement: React.FC = () => {
   return (
-    <div />
+    <h1>Financial Movement</h1>
   );
 };
 
