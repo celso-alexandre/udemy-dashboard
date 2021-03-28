@@ -1,12 +1,17 @@
-import Dashboard from './pages/Dashboard';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import Layout from './components/Layout';
 import GlobalStyles from './styles/globalStyles';
 
-const App = () => {
+import dark from './styles/themes/dark';
+// import light from './styles/themes/light';
+
+const App: React.FC = () => {
   return (
-    <>
+    <ThemeProvider theme={dark}>
       <GlobalStyles />
-      <Dashboard />
-    </>
+      <Layout />
+    </ThemeProvider>
   );
 };
 
